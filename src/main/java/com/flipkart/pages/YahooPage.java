@@ -42,7 +42,6 @@ public class YahooPage {
 		MouseActions.jSClick(driver, YahooLocator.mailIcon);
 		logger.info("User navigates to Yahoo Mail");
 		
-		driver.quit();
 		return OTP;
 
 	}

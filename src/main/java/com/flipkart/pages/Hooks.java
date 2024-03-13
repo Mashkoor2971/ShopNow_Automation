@@ -14,7 +14,12 @@ import io.cucumber.java.After;
 
 public class Hooks {
 	public static WebDriver driver;
-
+	
+	
+	/**
+	 * This is a static block which helps in initilization of Driver(Chrome , Firefox , Edge )
+	 * @author Mashkoor
+	 */
 	static {
 		FileInputStream fis = null;
 		try {
@@ -38,13 +43,17 @@ public class Hooks {
 			System.setProperty("webdriver.gecko.driver", "\\src\\test\\resouces\\drivers\\geckodriver.exe");
 			WebDriver driver = new FirefoxDriver();
 		} else if (mybrowser.equals("edge")) {
-			System.setProperty("webdriver.edge.driver", "C:\\selenium\\edgedriver_win64\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "\\src\\test\\resouces\\drivers\\msedgedriver.exe");
 			WebDriver driver = new EdgeDriver();
 		}
 		driver.manage().window().maximize();
 
 	}
 
+	/**
+	 * This is After Hooks methos which is called automatically after every Scenario
+	 * @author Mashkoor
+	 */
 	@After
 	public void tearDown() {
 		if (driver != null)
