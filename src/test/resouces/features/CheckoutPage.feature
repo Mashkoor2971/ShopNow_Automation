@@ -14,5 +14,5 @@ Scenario Outline: Verify user is able to naviagte to checkout page
     
     Examples:
     |Keyword|email                     |password      |Title|
-    |Laptop |automation27@yahoo.com    |Testing@123   |Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!|
+    |Laptop |automation27@yahoo.com    |Test@123      |Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!|
    
